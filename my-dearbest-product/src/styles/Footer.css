@@ -1,0 +1,176 @@
+.footer{
+    width:89%;
+    background-color: rgb(249,249,249);
+    bottom: 0px;
+    margin: auto;
+    font-family: sans-serif;
+    height: auto;
+    padding:10px;
+    margin-top:10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+   
+}
+
+.firstdiv{
+    width:92%;
+    height:10%;
+    display:flex;
+    background-color: rgb(255,255,255);
+    padding:1%;
+    margin: auto;
+   
+}
+#footertext{
+    display:inline;
+    margin:1%;
+    font-size: 13px;
+
+}
+.seconddiv{
+    width:90%;
+    margin:auto;
+    margin-top:2%;
+    background-color:  rgb(255,255,255);
+    display:flex;
+    justify-content: space-around;
+    padding:2%;
+   
+    /* height:50px; */
+}
+
+.div1
+{
+    /* border: 1px solid black; */
+    /* height: fit-content; */
+   
+   text-align: center;
+   padding-top: 1%;
+ 
+
+   
+    /* margin-top: -5px; */
+
+}
+.font
+{
+    font-size: 18px;
+    /* font-weight:500; */
+}
+.div1 img
+{
+    
+    width: 90%;
+    height:60px;
+    text-align: center;
+    box-sizing: border-box;
+ 
+}
+.divs2
+{
+   
+    text-align: center;
+    margin-left: 65px;
+    margin-top: 10px;
+    width: 225px;
+}
+
+.divs2>img{
+    text-align: center;
+    margin-left: 70px;
+    height:20%;
+    width:15%;
+
+}
+
+.main_div2
+{
+   margin:auto;
+    width:90%;
+    /* border: 1px solid green; */
+    height: 12%;
+    box-sizing: border-box;
+    padding-top:2%;
+    display: flex;
+    justify-content:space-between;
+   
+}
+.top_div
+{
+    display: flex;
+    width:50%;
+    /* height:50%; */
+    /* border: 1px solid yellow; */
+    box-sizing: border-box;
+    padding: 2%;
+    margin-right: 15px;
+}
+.font1
+{
+    font-size: 19px;
+    font-weight: 550;
+    color: gray;
+    margin-top: 0px;
+    margin-right: 10px;
+}
+.points
+{
+    width: 350px;
+    height: 30px;
+    font-size: 18px;
+}
+.sub_btn
+{
+    color: white;
+    background-color: black;
+    width: 150px;
+    height: 35px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+.thirdright{
+    display:flex;
+    width:50%;
+   
+    padding-top:2%;
+    justify-content:space-around;
+
+
+}
+.icons{
+
+    font-size: 30px;
+}
+.list-unstyled{
+    list-style: none;
+    text-align: center;
+    font-size: 12px;
+}
+.row{
+    display:flex;
+    margin:auto;
+   justify-content:space-between;
+   width:90%;
+   font-size: 20px;
+  
+}
+
+.scan{
+   height:80px;
+   max-width: auto;
+}
+.belowimg{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height:10%;
+   
+}
+.belowimg>img{
+   
+    width:3%;
+    margin-left:2%;
+     margin:2% 2% 0 0; 
+
+    height:18%;
+}
