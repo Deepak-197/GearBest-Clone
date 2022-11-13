@@ -8,7 +8,7 @@
     justify-content: space-around;
     width:100%;
     height: auto;
-    border: 1px solid rgb(81, 77, 112); 
+    /* border: 1px solid rgb(81, 77, 112);  */
     
 }
 
@@ -18,7 +18,7 @@
     margin-bottom: 30px;
     text-align: center;
     padding: 20px; 
-     border: 1px solid rgb(232, 35, 35); 
+     /* border: 1px solid rgb(232, 35, 35);  */
     margin-left: -18px;
 }
 #collDiv:hover{

@@ -21,7 +21,7 @@ function SignUp()
    {
       e.preventDefault();
       dispatch({ type: ACTION_TYPE.SIGN_UP_REQUEST });
-     axios.post("https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyCjtxI56rKMb3agEhqWfWMYguQhRvFEI94",
+     axios.post("https://reqres.in/api/register",
       {
         email:email,
         password:password,
@@ -30,7 +30,7 @@ function SignUp()
       .then((res)=>
       {
         dispatch({ type: ACTION_TYPE.SIGN_UP_SUCCESS, payload: res.data });
-        localStorage.setItem("user", res.data.idToken);
+        localStorage.setItem("user", res.data.token);
         Navigate("/login");
         console.log("res",res)
         setEmail("")
@@ -46,7 +46,7 @@ function SignUp()
         <div className="signup-optimus">
         <div>
         <Link href="/">
-       <Image src="https://www.ayoa.com/wp-content/themes/droptaskreload/navigation/images/ayoa_bluenavlogo.svg" width="160px" height="50px" alt="Matrix"  />
+       <Image src="https://i.ibb.co/zFCWhqT/AQUALITY-PRODUCT-2022.png" width="160px" height="50px" alt="Matrix"  />
       </Link> 
         </div>
         <Flex align="center" justifyContent="center" mt={10}>
@@ -82,4 +82,4 @@ function SignUp()
         </div>
       );
 }
-export default SignUp
+export default SignUp;

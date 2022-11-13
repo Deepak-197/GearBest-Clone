@@ -4,15 +4,20 @@
     /* margin-top: 50px; */
     margin: auto;
     display: grid;
+    gap: 20px 10px;
+    height: auto;
+    padding: 20px;
 }
 
 
 .recommendDiv {
     display: grid;
-    grid-template-columns: repeat(4, 23%);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px 10px;
     width:95%;
     border: 1px solid rgb(232, 213, 213);
     margin: auto;
+    height: auto;
 
 }
 
@@ -20,6 +25,7 @@
     margin-left: 18%;
     /* border: rgb(224, 217, 217) 1px solid; */
     width: 80%;
+    height: auto;
 }
 
 .categoryDiv {
@@ -29,11 +35,12 @@
     padding: 24px;
     margin-left: 30px;
     margin-right: 20px;
-    height: 80%;
+    height: auto;
 }
 
 .categoryDiv:hover {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    height: auto;
 }
 
 .categoryDiv img {
@@ -69,9 +76,9 @@
 
 #Recomm {
     text-align: left;
-    font-size: 22px;
+    font-size: 15px;
     margin-left: 30px;
-    font-weight: 700;
+    /* font-weight: 700; */
 }
 #tppp{
   height: 40px;
@@ -88,4 +95,7 @@
 #skn2 img{
     width: 200px;
     height: 100%;
+}
+*{
+    font-weight: normal;
 }

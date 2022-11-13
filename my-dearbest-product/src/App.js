@@ -5,11 +5,15 @@ import { Footer } from './Component/Footer';
 
 import { LandingPage } from './Component/landingPage';
 
+import { Navbar } from './Component/Navbar';
+
 function App() {
   return (
     <div className="App">
-      <h1>My DearBest Project</h1>
+     
       {/* <AllRoutes /> */}
+      
+      <Navbar />
       <LandingPage />
       
       <Footer />
