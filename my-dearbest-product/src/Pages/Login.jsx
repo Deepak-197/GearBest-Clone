@@ -14,7 +14,7 @@ import axios from 'axios'
 import { useNavigate } from "react-router-dom";
 import { Authcontext } from "../Context/AuthContextProvider";
 import { ACTION_TYPE } from "../Context/action";
-export default Login 
+
 function Login() 
 {
   const[email,setEmail] = useState("")
@@ -26,7 +26,7 @@ function Login()
  {
     e.preventDefault();
     dispatch({ type: ACTION_TYPE.LOGIN_REQUEST });
-   axios.post("https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyCjtxI56rKMb3agEhqWfWMYguQhRvFEI94",
+   axios.post("https://reqres.in/api/login",
     {
       email:email,
       password:password,
@@ -35,8 +35,8 @@ function Login()
     .then((res)=>
     {
       console.log("res",res)
-      dispatch({ type: ACTION_TYPE.LOGIN_SUCCESS, payload: res.data.idToken});
-      localStorage.setItem("user", res.data.idToken);
+      dispatch({ type: ACTION_TYPE.LOGIN_SUCCESS, payload: res.data.token});
+      localStorage.setItem("user", res.data.token);
       Navigate("/");
       setEmail("")
       setPassword("")
@@ -80,3 +80,5 @@ function Login()
       );
 }
 // eslint-disable-next-line import/no-anonymous-default-export
+
+export default Login;
